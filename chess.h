@@ -72,6 +72,8 @@ char** repeatH(char**, int);
  * down of each other
  * The user must liberate the memory space reserved for the string array (the picture) 
  */
+
+
 char** repeatV(char**, int);
 
 /*

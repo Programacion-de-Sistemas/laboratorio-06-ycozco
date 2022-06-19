@@ -2,12 +2,9 @@
 #include "figures.h"
 
 void display(){
-
-
     char** casilla1 = join(graySquare,whiteSquare);
     char** repeat_c1 = repeatH(casilla1,4);
     char** rep_tab = repeatV(repeat_c1,2);
-
     char** rook_knight = join(rook,knight);
     char** bishop_queen = join(bishop,queen);
     char** king_bishop = join(king,bishop);
@@ -18,6 +15,4 @@ void display(){
 
     char** tab_01 = superImpose(m3,rep_tab);
     interpreter(tab_01);
-
-
 }

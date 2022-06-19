@@ -5,7 +5,7 @@ void display(){
 
   char** normal = join(graySquare,whiteSquare);
   char** reversed = reverse(normal);
-  char** combined = join(reversed,normal);
-  char** result= repeatV(combined,2); 
-  interpreter(result);
+  char** result= up(normal,reversed); 
+  char** result2 = repeatV(result,2);
+  interpreter(result2);
 }

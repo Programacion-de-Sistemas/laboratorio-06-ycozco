@@ -2,6 +2,7 @@
 #include "figures.h"
 
 void display(){
+    char** graySquare = reverse(whiteSquare);
     char** casilla1 = join(graySquare,whiteSquare);
     char** repeat_c1 = repeatH(casilla1,4);
     char** rep_tab = repeatV(repeat_c1,2);

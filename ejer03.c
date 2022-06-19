@@ -2,7 +2,7 @@
 #include "figures.h"
 
 void display(){
-
+        char** graySquare = reverse(whiteSquare);
   char** normal = join(graySquare,whiteSquare);
   char** normal2 = repeatH(normal,4);
   char** reversed = reverse(normal);

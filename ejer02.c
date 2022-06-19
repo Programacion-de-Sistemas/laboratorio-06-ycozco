@@ -3,6 +3,6 @@
 
 void display(){
   char** two_combo = join(graySquare,whiteSquare);
-  char** piece_01 = superImpose(knight,graySquare);
-  interpreter(piece_01);
+  char** combined= repeatH(two_combo,4); 
+  interpreter(combined);
 }

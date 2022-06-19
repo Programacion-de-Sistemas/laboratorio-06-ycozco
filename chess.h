@@ -37,11 +37,12 @@ char** rotateR(char**);
  * The user must liberate the memory space reserved for the string array (the picture) 
  */
 char** reverse(char**);
-
+    
 /*
  * return a new picture, the first picture over the second picture
  * The user must liberate the memory space reserved for the string array (the picture) 
  */
+
 char** superImpose(char**, char**);
 
 /*

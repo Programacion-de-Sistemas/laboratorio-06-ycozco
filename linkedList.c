@@ -31,37 +31,15 @@ node *addNode(node *nodes, int element){
 }
 int main(){
     node *list=NULL;
-
-    //agregamos un elemento a la lista
-    node *n = malloc(sizeof(node)); //asignando memoria para node
-    if(n==NULL){
-        return 1;
-    }
-    n->number=45;
-    n->next=NULL;
-
-    node *n_2 = malloc(sizeof(node)); //asignando memoria para node
-    if(n_2==NULL){
-        return 1;
-    }
-    n_2->number=15;
-    n_2->next=NULL;
-
-    //actualizar el punto next del primer elemento
-    n->next=n_2;
-
-
-    //actualizamos la lista
-    list=n;
-
-    // imprimir los elementos de la lista
-    for (node *tmp = list;tmp!=NULL;tmp=tmp->next)
-    {
-        printf("%i\n",tmp->number);
-
-
+    int listSize;
+    // test listZise = 20;
+    listSize = 20;
+    // para la prueba se asigna a cada nodo el  valor a partir de 1
+    for(int i = 1; i <= listSize; i++){
+        list = addNode(list,i);
     }
 
+    // 
     // función (free) BUENA PR´ACTICA EN PROGRAMACI´ON EN "C"
     while(list!=NULL){
         node *tmp=list->next;

@@ -39,7 +39,11 @@ int main(){
         list = addNode(list,i);
     }
 
-    // 
+    // creamos bucle para recorrer la lista de nodos
+    for (node *tmp = list; tmp != NULL; tmp->next){
+        printf("%i\n",tmp->number);
+    }
+
     // función (free) BUENA PR´ACTICA EN PROGRAMACI´ON EN "C"
     while(list!=NULL){
         node *tmp=list->next;

@@ -45,11 +45,9 @@ char** reverse(char**);
 
 char** superImpose(char**, char**);
 
-/*
- * return a new picture, the first one on the side the second, the new picture will have
- * a wide equeals to the sum from the both wides
- * The user must liberate the memory space reserved for the string array (the picture) 
- */
+
+
+
 char** join(char**, char**);
 
 /*

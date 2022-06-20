@@ -9,6 +9,26 @@ typedef struct node
 }
 node;
 
+node *addNode(node *nodes, int element){
+    node *newNode = malloc(sizeof(node));
+    if(newNode == NULL){
+        printf("Error al reservar memoria");}
+    else{
+        newNode->number = element;
+        newNode->next = NULL;
+        if(nodes == NULL){
+            nodes = newNode;
+        }
+        else{
+            node *tmp = nodes;
+            while(tmp->next != NULL){
+                tmp = tmp->next;
+            }
+            tmp->next = newNode;
+        }
+    }
+    return nodes;
+}
 int main(){
     node *list=NULL;
 

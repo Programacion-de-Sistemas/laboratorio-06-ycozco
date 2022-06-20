@@ -9,5 +9,6 @@ void display(){
   char** reversed2 = repeatH(reversed,4);
   char** result= up(normal2,reversed2); 
   char** result2 = repeatV(result,2);
+  
   interpreter(result2);
 }

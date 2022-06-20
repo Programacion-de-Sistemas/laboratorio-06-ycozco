@@ -43,7 +43,8 @@ int main(){
         printf("%i\t",tmp->number);
     }
 
-    // función (free) BUENA PR´ACTICA EN PROGRAMACI´ON EN "C"
+    // 
+    // función (free) BUENA PRACTICA EN PROGRAMACI´ON EN "C"
     while(list!=NULL){
         node *tmp=list->next;
         free(list);

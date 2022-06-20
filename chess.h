@@ -36,7 +36,8 @@ char** rotateR(char**);
  * return a new picture, the original picture with reverse colors
  * The user must liberate the memory space reserved for the string array (the picture) 
  */
-char** reverse(char**);
+char** reverse(char** figure);
+    
     
 /*
  * return a new picture, the first picture over the second picture
